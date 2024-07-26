@@ -1,0 +1,177 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Untitled Document</title>
+  <script type="text/javascript" language="javascript">
+    function validate() {
+
+      // if (document.f1.name.value == "") {
+      //   document.getElementById("error").innerHTML = "Please provide your name";
+      //   document.f1.name.focus();
+
+      //   return false;
+      // }
+      // if (document.f1.mob.value == "" || document.f1.mob.value.length != 10) {
+
+      //   document.getElementById("error").innerHTML = "Please provide a Mobile";
+      //   document.f1.mob.focus();
+      //   return false;
+      // }
+
+
+      // if (document.f1.email.value == "") {
+
+      //   document.getElementById("error").innerHTML = "Please provide your Email!";
+      //   document.f1.email.focus();
+      //   return false;
+      // }
+      // var email = document.f1.email.value;
+      // atpos = email.indexOf("@");
+      // dotpos = email.lastIndexOf(".");
+      // if (atpos < 1 || (dotpos - atpos < 2)) {
+
+      //   document.getElementById("error").innerHTML = "Please enter correct email ID";
+      //   document.f1.email.focus();
+      //   return false;
+      // }
+
+      // if (document.f1.country.value == "-1") {
+      //   document.getElementById("error").innerHTML = "Please provide your country";
+      //   return false;
+      // }
+
+      // var chk_value = document.f1.c1.checked + document.f1.c2.checked + document.f1.c3.checked
+
+
+      // if (chk_value < 2) {
+      //   document.getElementById("error").innerHTML = "Please select at least 2 game";
+      //   document.f1.c1.focus();
+      //   return false;
+
+      // }
+      let q2_check = document.f1.q2[0].checked + document.f1.q2[1].checked;
+if(q2_check==0)
+{
+  alert("please answer the question no2");
+  return false;
+}
+
+      var r_value = document.f1.r[0].checked + document.f1.r[1].checked;
+      var r1= document.f1.r[0].value;
+alert(r1);
+      if (r_value == 0) {
+        document.getElementById("error").innerHTML = "Please select gender";
+        document.f1.c1.focus();
+        return false;
+
+      }
+
+      if (document.f1.txtarea.value == "") {
+        document.getElementById("error").innerHTML = "Please provide Details!";
+        document.f1.txtarea.focus();
+        return false;
+      }
+
+      return (true);
+    }
+  </script>
+  <style>
+    .error {
+      color: #FF0000;
+    }
+  </style>
+</head>
+
+<body>Submit your form online -
+  <form action="dd.php" method="post" name="f1" onsubmit="return validate()" > 
+    <p>Name
+      <input name="name" type="text" size="25" maxlength="20" onblur="blur1()" />
+    </p>
+
+    <p>Mobile No.
+      <input name="mob" type="text" size="25" maxlength="20" />
+    </p>
+    <p>Email.
+      <input name="email" type="text" size="25" maxlength="20" />
+    </p>
+    <p>
+
+      Select Country
+      <select name="country" onchange="change()">
+        <option selected="selected" value="-1">select country
+        <option value="india">india
+        <option value="pakistan">pakistan
+      </select>
+    </p>
+    <p>interested Game </p>
+    <p><input name="c1" id="abcd" type="checkbox" value="cricket" />
+      cricket</p>
+    <p>
+      <input name="c2" type="checkbox" value="hockey" />
+      hockey</p>
+    <p>
+      <input name="c3" type="checkbox" value="golf" />
+
+      golf </p>
+    <p>gender</p>
+    <p>
+      <input type="radio" name="r" value="male" />
+      Male
+      <br />
+      <input type="radio" class="abcd" name="r" value="female" />
+      Female
+    </p>
+
+    <p>
+      <input type="radio" name="q2" value="male1" />
+      Male
+      <br />
+      <input type="radio" class="abcd" name="q2" value="female1" />
+      Female
+    </p>
+
+
+    <p>
+      <textarea rows="3" name="txtarea" class="abcd" cols="50"></textarea>
+    </p>
+    <p> <input type="file" name="file1" />
+    </p>
+    <div class="error" id="error"></div>
+    <p>
+      <div id="parent">
+        <input type="button" value="click" id="btn1">
+      </div>
+
+      <div id="next-parent" onclick="alert('FAS')">
+        next parent
+      </div>
+
+      <input type="reset" name="reset" value="reset123" class="abcd" />
+      <input type="submit" name="submit" value="submit123" />
+    </p>
+
+  </form>
+  <script>
+    document.getElementById("parent").addEventListener('click', function () {
+      console.log(this.id);
+      alert("parent click");
+    });
+    let ele = document.getElementById("btn1");
+    ele.addEventListener('click', function () {
+      console.log(this.id);
+      alert("child click");
+    })
+
+
+    let change = function () {
+      alert("changed");
+    }
+
+   
+  </script>
+</body>
+
+</html>

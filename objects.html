@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript">
+/*function.call();*/
+
+var myObject = {
+sayHello : function() {
+ console.log('Hi! My name is ' + this.secobj.a);
+ },
+
+myName : 'Rebecca',
+secobj:{a:"abc",b:"pqr"}
+ };
+
+ var secondObject = {
+	 myName : 'colin'
+ };
+
+alert(myObject.secobj.a);
+myObject.sayHello(); // logs 'Hi! My name is Rebecca'
+myObject.sayHello.call(secondObject); // logs 'Hi! My name is Colin'
+
+var mybjecthello=myObject.sayHello.bind(secondObject);
+mybjecthello();
+</script>
+</head>
+
+<body>
+</body>
+</html>

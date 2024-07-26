@@ -1,0 +1,35 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Untitled Document</title>
+</head>
+
+<body>
+  <button id="but1" onclick="sum(10,20)">click</button>
+  <script>
+    // document.getElementById("but1").addEventListener("click", sum(10, 20));
+
+    function sum(a, b) {
+      debugger;
+      alert(a);
+      var v1 = a;
+      var v2 = b;
+      var c = v1 + v2;
+
+      func2(c);
+    }
+    func2 = function (value1) {
+      func3(value1);
+    };
+    func3 = function (value2) {
+      console.log(value2);
+      document.write("the total no. is " + value2);
+    };
+
+  </script>
+</body>
+
+</html>

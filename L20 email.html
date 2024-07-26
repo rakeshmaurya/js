@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript">
+function isvalid()
+{
+var a=document.f1.t1.value
+var len=a.length;
+if (len<7)
+{
+alert("the emailid should be 7 charactor")
+}
+else
+{
+var checkat=a.indexOf("@");
+var checkdot=a.indexOf(".");
+if(checkat<3)
+alert("@ not fount")
+else if(checkdot==-1)
+alert(". not found")
+else
+alert("input is ok")
+}
+}
+</script>
+
+
+</head>
+
+<body>
+<form action="" method="post" name="f1">
+<input name="t1" type="text" size="25" maxlength="20" />
+<input name="button" type="button" value="s" onclick="isvalid()" />
+</form>
+</body>
+</html>

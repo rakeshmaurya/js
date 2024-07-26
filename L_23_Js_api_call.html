@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <!--  http://api.weatherapi.com/v1/current.json?key=468e64a7756b4b898c7122626242502&q=London&aqi=yes -->
+    <input type="text" name="city-input" id="city-input">
+    <button id="search-button">search</button>
+    <div id="cityname"></div>
+    <div id="citytime"></div>
+    <div id="citytemp"></div>
+
+
+
+    <script>
+        const button = document.getElementById("search-button");
+        const input = document.getElementById("city-input");
+        const cityName = document.getElementById("cityname");
+        const cityTime = document.getElementById("citytime");
+        const cityTemp = document.getElementById("citytemp");
+
+        // console.log(input.value);
+        async function getdata(cityname) {
+            const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=468e64a7756b4b898c7122626242502&q=${cityname}&aqi=yes`, () => {
+
+            })
+            return await promise.json();
+        }
+        button.addEventListener("click", async () => {
+            const inputValue = input.value;
+            const result = await getdata(inputValue);
+            console.log(result);
+            cityName.innerHTML = result.location.name;
+            cityTime.innerHTML = result.location.localtime;
+            cityTemp.innerHTML = result.current.temp_f;
+        });
+    </script>
+</body>
+
+</html>

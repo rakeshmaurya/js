@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" language="javascript">
+var man={
+	hand:2,
+spead: function()
+{
+	alert("object fundtion");}
+}
+man.spead();
+
+
+</script>
+<style>
+.error
+{
+	color:#FF0000;
+}
+</style>
+</head>
+
+<body>Submit your form online -  
+<form action="dd.php" method="post" name="f1">
+<p>Name
+  <input name="name" type="text" size="25" maxlength="20" />
+</p>
+
+<p>Mobile No.
+  <input name="mob" type="text" size="25" maxlength="20" />
+</p>
+<p>Email.
+  <input name="email" type="text" size="25" maxlength="20" />
+</p>
+<p>
+  
+  Select Country 
+  <select name="country" onchange="change()">
+    <option selected="selected" value="-1">select country
+      <option value="india">india
+      <option value="pakistan">pakistan
+  </select>
+</p>
+<p>interested Game </p>
+<p><input name="c1" id="a" type="checkbox" value="cricket" />  
+cricket</p>
+  <p>
+    <input name="c2" type="checkbox" value="hockey" />
+  hockey</p>
+  <p>
+    <input name="c3" type="checkbox" value="golf" />
+    
+  golf   </p>
+  <p>gender</p>
+  <p>    
+<input type="radio" name="r" value="male"/>
+Male 
+    <br />
+         <input type="radio" name="r" value="female"/>
+      Female
+  </p>
+  <p>
+    <textarea rows="3" name="txtarea" cols="50" onblur="javascript:document.f1.submit()"></textarea>
+  </p>
+  <p>  <input type="file" name="file1"  />
+  </p>
+  <div class="error" id="error"></div>
+  <p>
+  >
+  </p>
+  
+   </form>
+</body>
+</html>

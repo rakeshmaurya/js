@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<script type="application/javascript" language="javascript">
+var a; 
+var b=30;
+var c=0; // 0 or null or undefined
+var d="10";
+var e=null;
+
+document.write("if value is not declared it returns : " + (a));	
+document.write("</br>undefined no can not be calculate with any number/string. it returns : " + (a+b));
+document.write("</br>null object can be calculate with any number. it returns : " + (b+e));
+document.write("</br>null object can be calculate with any string. it returns : " + (d+e));
+document.write("</br>String + number can not be added : " + (b+d));
+document.write("</br>String can be converted into number with number : " + (b+Number(d)));
+document.write("</br>String can be converted into number with unaray : " + (b+ +d));
+document.write("</br>find out data type : " + typeof(b));
+
+if(b>d) 
+{
+	document.write("</br>String and number can be compared but can not not be calculated ");
+}
+
+if(!isNaN(b)) 
+{
+	document.write("</br>d is not a number.");
+}
+if(!c) 
+{
+	document.write("</br>0 is behaves like undefined");
+}
+
+if("style" in document.body) 
+{
+	document.write("</br> CSS property available in body");
+}
+
+
+</script>
+
+</html>
+<body>
+
+</body>
+</html>

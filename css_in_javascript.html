@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function changecolor()
+{
+	var color=document.getElementById("drop1").value;
+	
+	if(color=="red")
+	{
+		 document.bgColor="red";
+		 document.body.style.fontSize="20px";
+		 document.getElementById("head").innerHTML="fathername";
+		 
+		 
+		 
+		 
+		 
+	}
+	else if (color=="green")
+	{
+		document.bgColor="green";
+		}
+	else if(color=="blue")
+	{
+		document.bgColor="blue"}
+		
+	else
+	{ 
+	document.bgColor="white"
+	}}
+    </script>
+
+</head>
+
+<body>
+<div id="abc" style="width:100px; height:100px;"><h1 id="head">Name</h1></div>
+<select onchange="changecolor()" id="drop1">
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="blue">blue</option>
+</select>
+<script type="text/javascript">
+document.getElementById("abc").style.backgroundColor="red";
+document.getElementById("abc").style.color="white";
+</script>
+
+</body>
+</html>

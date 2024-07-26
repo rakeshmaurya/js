@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript">
+		// NUMBER object //
+		var val = Number.MAX_VALUE;
+		var val2 = Number.MIN_VALUE;
+		document.write("javascript maximum value is " + val);
+		document.write("javascript minimum value is " + val2);
+		//-->
+
+		// STRING object //
+
+		// 1.charAt- used to find character
+		var str = new String("This is string");
+		document.writeln("first position of i is:" + str.indexOf("i"));
+		document.writeln("<br /> 1. find charactor at is:" + str.charAt(1));
+		document.writeln("<br />2. str.charAt(2) is:" + str.charAt(2));
+		document.writeln("<br />3. str.charAt(3) is:" + str.charAt(3));
+
+		// 2.indexOf - used to find position
+		var str1 = new String("This is iron man");
+		var index = str1.indexOf("iron");
+		document.write("<br> 4. indexOf iron :" + index);
+
+		// 3. replace
+
+
+		var str2 = "Apples are round, and apples are juicy.";
+		var newstr = str2.replace(/apples/gi, "oranges");
+		document.write(" <br>5." + newstr);
+
+		// 4. split
+		var str4 = "Apples are round, and apples are juicy.";
+		var splitted = str4.split(" ", 5);
+		document.write(" <br>6." + splitted[4]);
+
+		// 5. to chnage formatting
+		var str5 = "Apples are round, and Apples are Juicy.";
+		document.write(" <br>7." + str5.toUpperCase() + "<br>");
+		document.write(" <br>8." + str5.toLowerCase() + "<br>");
+		document.write(" <br>9." + str5.bold());
+		document.write(" <br>10." + str5.fontcolor("red"));
+
+		// method 1 to create new object by using inbuilt object constructor  
+		const animal = new Object();
+		animal.name = "cow";
+		animal.number = 100;
+		document.write("<br/>Animal : " + animal.number);
+
+		// method 2 to create new object by Object litteral syntax {} if we have more than one method this method is not good so 
+		//if any object is more that one method we use factory function to create object
+		var man = {
+			hand: 2,
+			run: function run() {
+				document.write("this is the property of man");
+			}
+		}
+		document.write(" <br>12. " + man.hand + " <br>");
+		man.run();
+
+
+		// factory function
+		function createCircle(radius) {
+			return {
+				radius,
+				draw: function () {
+					console.log("draw");
+				}
+			}
+		}
+
+		const cricle = createCircle(2);
+		cricle.draw();
+
+		// method 3 to create new object creating constructor
+		//car is prototype
+		function Car(make, model, year) {
+			console.log("what is this here", this);
+			this.make = make;
+			this.model = model;
+			this.year = year;
+		}
+		const maruti = Car("Maruti", "800", "1980"); // maruti is object car is construction function
+		var kenscar = new Car("Nissan", "300ZX", 1992); //car is cunstructor
+		var vpgscar = new Car("Mazda", "Miata", 1990);
+		document.write(" <br>12." + kenscar.model);
+		Car.prototype.color = "red"; // add property in prototype
+		kenscar.color = "black"; // add property in object
+		const propertyname = "headlight"; // headligh property is comming dynamicaly
+		kenscar[propertyname] = { x: 5 } // add property name dynamically
+		delete kenscar[propertyname]; // delete the property name
+
+		// to enumerate all the property in object
+		for (let keys in kenscar) {
+			document.write("<ul>");
+			document.write("<ul>")
+			document.write("<ul>")
+			console.log("keys" + keys);
+		}
+
+		const allproperties = Object.keys(kenscar);
+
+		if ("color" in kenscar) {
+			console.log("kenskar has color property");
+		}
+
+
+
+
+		document.write(" <br>13." + kenscar.color);
+		document.write(" <br>14." + vpgscar.color);
+		// choice of creating object(factory or constructor) is upto you
+
+		let x = {} //  this is empty litteral object it uses new object() constructor to create object
+		let abc = "kk,lk"; //  this is litteral object it uses new string() constructor to create object, so every oject has constructor property
+		// in javascript every function is object
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

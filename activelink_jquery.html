@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.nav1
+{
+	color:red;
+}
+.active
+{
+	color:green;
+}
+
+</style>
+<script src="jquery-2.1.1.min.js">
+
+</script>
+</html>
+<body>
+<ul class="icyLink">
+
+      <li><a class="nav1" href="#">The World of Icengale</a></li>
+      <li><a class="nav1" href="#">History of Icengale</a></li>
+      <li><a class="nav1" href="#">Time & Calendar of Icengale</a></li>
+
+</ul>
+<script>
+function re()
+{
+window.location.reload();
+}
+function clear()
+{
+	clearInterval(re);
+}
+setInterval(function(){re()},5000);
+
+</script>
+<script>
+$(document).ready(function(){
+   $("a.nav1").click(function () {
+      // switch all tabs off
+      $(".nav1").removeClass("active");
+      // switch this tab on
+      $(this).addClass("active");
+   });
+});
+</script>
+<input type="button" onClick="re()">
+<input type="button" onClick="clear()">
+</body>
+</html>

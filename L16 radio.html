@@ -1,0 +1,42 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Untitled Document</title>
+  <script>
+    function a() {}
+
+    function abc() {
+      var gender;
+      if (document.f1.r[0].checked == true) {
+
+        var gender = document.f1.r[0].value;
+
+      } else if (document.f1.r[1].checked == true) {
+
+        var gender = document.f1.r[1].value;
+
+      } else {
+        alert("please select your gender");
+      }
+      alert("you have selected" + gender);
+    }
+  </script>
+</head>
+
+<body>
+  <form action="" method="get" name="f1">
+    <p>
+      <input type="radio" name="r" value="male" />
+      Male
+      <br />
+      <input type="radio" name="r" value="female" />
+      Female
+    </p>
+    <input type="button" name="button" id="button" value="check" onclick="abc()" />
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript">
+function game()
+{
+if(document.f1.c1.checked==true)
+g1=document.f1.c1.value;
+else
+g1="";
+
+if(document.f1.c2.checked==true)
+g2=document.f1.c2.value;
+else
+g2="";
+
+if(document.f1.c3.checked==true)
+g3=document.f1.c3.value;
+else
+g3="";
+alert("you have select"+g1+g2+g3);
+}
+
+</script>
+</head>
+
+<body>
+<form action="" method="get" name="f1">
+  <p>
+<input name="c1" type="checkbox" value="cricket" />  
+cricket123</p>
+  <p>
+    <input name="c2" type="checkbox" value="hockey" />
+  hockey</p>
+  <p>
+    <input name="c3" type="checkbox" value="golf" />
+    
+  golf   </p>
+   <input type="button" value="choose games" onclick="game()"/>
+</form>
+</body>
+</html>

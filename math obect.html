@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<script>
+/*var a=2349.82;
+
+document.write("roundvalue : "+Math.round(a)+"<br>");
+document.write("powervalue : "+Math.pow(2,3)+"<br>");
+document.write("Maximumvalue : "+Math.max(5,10)+"<br>");
+document.write("Minimumvalue : "+Math.min(5,10)+"<br>");*/
+function open_win1()
+{ 
+ var a=open("menubar.html","google","height=300,width=500,scrollbars=yes,statusbar=no,menubar=no");
+}
+function open_win2()
+{
+	var b=open("","my","height=300,width=500")
+	b.document.write("This is my window");
+}
+function open_win3()
+{
+	var b=open("","_blank","height=300,width=500")
+	b.document.write("This is my window");
+}
+
+
+/*  var a="1234ramesh";
+  b = parseInt(a);
+  document.write(b+"<br>");
+  
+var x="123.54ramesh";
+  y = parseFloat(x);
+  document.write(y);*/
+
+</script>
+
+<body>
+<input type="button" value="windowopen" onclick="open_win1()" >
+<input type="button" value="windowopen2" onclick="open_win2()" />
+<input type="button" value="windowopen3" onclick="open_win3()" />
+</body>
+
+</html>

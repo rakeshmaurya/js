@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript">
+function game()
+{
+	
+	var game="";
+		
+	if(document.f1.c1.checked==true)
+	{
+		game1=document.f1.c1.value;
+		var game=game+game1;
+
+
+	}
+	if(document.f1.c2.checked==true)
+	{
+		game2=document.f1.c2.value;
+		var game=game+game2;
+	}
+	if(document.f1.c3.checked==true)
+	{
+		game3=document.f1.c3.value;
+		var game=game+game3;
+	}
+	//document.f1.hide.value=game;
+		//alert ("you have selected " + game);
+	}
+
+</script>
+</head>
+<body>
+<form action="gd.php" method="get" name="f1" enctype="multipart/form-data">
+  <p>
+  <input type="hidden" name="hide"/>
+<input name="c1" type="checkbox" value="cricket" />  
+cricket</p>
+  <p>
+    <input name="c2" type="checkbox" value="hockey" />
+  hockey</p>
+  <p>
+    <input name="c3" type="checkbox" value="golf" />
+    
+  golf   </p>
+   <input type="submit" value="choose games" onclick="game()"/>
+</form>
+</body>
+</html>

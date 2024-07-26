@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function emp(name, fname) {
+            this.name = name;
+            this.fname = fname;
+            emp.prototype.fullname = function () {
+                return this.name + " " + this.fname;
+            }
+        }
+
+        var name1 = new emp("rakesh", "shiv");
+        var name2 = new emp("ravi", "shiv");
+        
+      // document.write(name1.fullname());
+       console.log(name2)
+       import {a} from "person.js";
+       console.log(a)
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

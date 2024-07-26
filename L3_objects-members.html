@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript">
+		function emp(fname, lname) {
+			//private property
+			var privateFullname
+			//public property
+			this.fname = fname;
+			this.lname = lname;
+			//private method
+			var getprivateFullname = function () {
+				privateFullname = fname + lname;
+				return privateFullname;
+			}
+			//priviledged menthod
+			this.getpriivledgeFullname = function () {
+				return getprivateFullname();
+			}
+			//public method
+			emp.prototype.getpublicFullname = function () {
+
+				return this.getpriivledgeFullname();
+
+			}
+			
+
+		}
+		var rakesh = new emp("rakesh", "maurya");
+		rakesh.getprivateFullname();
+	</script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

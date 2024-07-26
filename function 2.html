@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+
+
+
+
+function sum()
+{
+	document.getElementById("result").value=eval(document.getElementById("f_value").value)+eval(document.getElementById("s_value").value) ;
+}
+function minus()
+{ 
+  document.getElementById("result").value=eval(document.getElementById("f_value").value)-eval(document.getElementById("s_value").value);
+}
+function gun()
+{ 
+  document.getElementById("result").value=eval(document.getElementById("f_value").value)*eval(document.getElementById("s_value").value);
+}
+function dived()
+   {
+	   document.getElementById("result").value=eval(document.getElementById("f_value").value)/eval(document.getElementById("s_value").value);
+	   }
+
+var ele = document.getElementById("minus");
+ele.addEventListener('click', function(){
+  alert("fa");
+})
+
+
+
+</script>
+</head>
+
+<body>
+<form id="f1">
+<input type="text" id="f_value"  />
+<input type="text" id="s_value" />
+<input type="text" id="result"/>
+<input type="button" value="+" onmouseover="sum()"/>
+<input type="button" value="-" onclick="minus()"/>
+<input type="button" value="*" onmousedown="gun()" />
+<input type="button" id="minus" value="ffff" />
+<div id="abc">pqr</div>
+</form>
+</body>
+</html>

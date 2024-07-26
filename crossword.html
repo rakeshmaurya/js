@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HedrinIndia - Crossword Game</title>
+<script>
+
+function check()
+
+	{
+			var a1=document.f.a1.value;
+	var a2=document.f.a2.value;
+	var a3=document.f.a3.value;
+	var a4=document.f.a4.value;
+	var a5=document.f.a5.value;
+	var a6=document.f.a6.value;
+	var a7=document.f.a7.value;
+	var a8=document.f.a8.value;
+	var a9=document.f.a9.value;
+	
+	var b1=document.f.b1.value;
+	var b2=document.f.b2.value;
+	var b3=document.f.b3.value;
+	var b4=document.f.b4.value;
+	var b5=document.f.b5.value;
+	var b6=document.f.b6.value;
+	var b7=document.f.b7.value;
+	var b8=document.f.b8.value;
+	var b9=document.f.b9.value;
+	
+	var c1=document.f.c1.value;
+	var c2=document.f.c2.value;
+	var c3=document.f.c3.value;
+	var c4=document.f.c4.value;
+	var c5=document.f.c5.value;
+	var c6=document.f.c6.value;
+	var c7=document.f.c7.value;
+	var c8=document.f.c7.value;
+	var c9=document.f.c9.value;
+	
+	var d1=document.f.d1.value;
+	var d2=document.f.d2.value;
+	var d3=document.f.d3.value;
+	var d4=document.f.d4.value;
+	var d5=document.f.d5.value;
+	var d6=document.f.d6.value;
+	var d7=document.f.d7.value;
+	var d8=document.f.d8.value;
+	var d9=document.f.d9.value;
+	
+	var e1=document.f.e1.value;
+	var e2=document.f.e2.value;
+	var e3=document.f.e3.value;
+	var e4=document.f.e4.value;
+	var e5=document.f.e5.value;
+	var e6=document.f.e6.value;
+	var e7=document.f.e7.value;
+	var e8=document.f.e8.value;
+	var e9=document.f.e9.value;
+	
+	var f1=document.f.f1.value;
+	var f2=document.f.f2.value;
+	var f3=document.f.f3.value;
+	var f4=document.f.f4.value;
+	var f5=document.f.f5.value;
+	var f6=document.f.f6.value;
+	var f7=document.f.f7.value;
+	var f8=document.f.f8.value;
+	var f9=document.f.f9.value;
+	
+	var g1=document.f.g1.value;
+	var g2=document.f.g2.value;
+	var g3=document.f.g3.value;
+	var g4=document.f.g4.value;
+	var g5=document.f.g5.value;
+	var g6=document.f.g6.value;
+	var g7=document.f.g7.value;
+	var g8=document.f.g8.value;
+	var g9=document.f.g9.value;
+	
+	var h1=document.f.h1.value;
+	var h2=document.f.h2.value;
+	var h3=document.f.h3.value;
+	var h4=document.f.h4.value;
+	var h5=document.f.h5.value;
+	var h6=document.f.h6.value;
+	var h7=document.f.h7.value;
+	var h8=document.f.h8.value;
+	var h9=document.f.h9.value;
+	
+	var i1=document.f.i1.value;
+	var i2=document.f.i2.value;
+	var i3=document.f.i3.value;
+	var i4=document.f.i4.value;
+	var i5=document.f.i5.value;
+	var i6=document.f.i6.value;
+	var i7=document.f.i7.value;
+	var i8=document.f.i8.value;
+	var i9=document.f.i9.value;
+	
+	var j1=document.f.j1.value;
+	var j2=document.f.j2.value;
+	var j3=document.f.j3.value;
+	var j4=document.f.j4.value;
+	var j5=document.f.j5.value;
+	var j6=document.f.j6.value;
+	var j7=document.f.j7.value;
+	var j8=document.f.j8.value;
+	var j9=document.f.j9.value;
+	
+	var k1=document.f.k1.value;
+	var k2=document.f.k2.value;
+	var k3=document.f.k3.value;
+	var k4=document.f.k4.value;
+	var k5=document.f.k5.value;
+	var k6=document.f.k6.value;
+	var k7=document.f.k7.value;
+	var k8=document.f.k8.value;
+	var k9=document.f.k9.value;
+	
+	
+	var game1=f6+g6+h6+i6;
+	var game2=f3+f4+f5+f6;
+	var game3=f1+g1+h1+i1+j1;
+	var game4=j4+j5+j6+j7+j8+j9;
+	var game5=a8+b8+c8+d8+e8+f8;
+	var game6=d3+e3+f3+g3+h3+i3+j3;
+	var game7=d7+e7+f7+g7;
+	var game8=a1+b1+c1+d1;
+	var game9=a1+a2+a3+a4+a5;
+	var game10=d2+e2+f2+g2+h2+i2+j2+k2;
+	var game11=d9+e9+f9+g9+h9;
+	var game12=d1+d2+d3+d4+d5+d6+d7+d8+d9;
+	var game13=b6+c6+d6+e6;
+	var game14=k1+k2+k3+k4+k5+k6+k7+k8+k9;
+	var game15=i1+i2+i3+i4+i5+i6+i7+i8;
+	var game16=f5+g5+h5+i5;
+	
+		
+			
+		if (game1=="BITE")
+		{
+		document.getElementById("game1").innerHTML="BITE, ";
+		}
+		
+		if (game2=="COMB")
+		{
+		document.getElementById("game2").innerHTML="COMB, ";
+		}
+		
+		if (game3=="CRAWL")
+		{
+		document.getElementById("game3").innerHTML="CRAWL, ";
+		}
+		if (game4=="HEDRIN")
+		{
+		document.getElementById("game4").innerHTML="HEDRIN, ";
+		}
+		if (game5=="INFEST")
+		{
+		document.getElementById("game5").innerHTML="INFEST, ";
+		}
+		if (game6=="ITCHING")
+		{
+		document.getElementById("game6").innerHTML="ITCHING, ";
+		}
+		if (game7=="LICE")
+		{
+		document.getElementById("game7").innerHTML="LICE, ";
+		}
+		if (game8=="NITS")
+		{
+		document.getElementById("game8").innerHTML="NITS, ";
+		}
+		if (game9=="NYMPH")
+		{
+		document.getElementById("game9").innerHTML="NYMPH, ";
+		}
+		if (game10=="PARASITE")
+		{
+		document.getElementById("game10").innerHTML="PARASITE, ";
+		}
+		if (game11=="SCALP")
+		{
+		document.getElementById("game11").innerHTML="SCALP, ";
+		}
+		if (game12=="SPIRACLES")
+		{
+		document.getElementById("game11").innerHTML="SPIRACLES, ";
+		}
+		if (game13=="SUCK")
+		{
+		document.getElementById("game13").innerHTML="SUCK, ";
+		}
+		if (game14=="TENTACLES")
+		{
+		document.getElementById("game14").innerHTML="TENTACLES, ";
+		}
+		if (game15=="WINGLESS")
+		{
+		document.getElementById("game15").innerHTML="WINGLESS, ";
+		}
+		if (game16=="MEAL")
+		{
+		document.getElementById("game16").innerHTML="MEAL, ";
+		}
+	}
+
+</script>
+<style>
+#game
+{
+	width:250px;
+	height:400px;
+	}
+input
+{
+	height:20px;
+	width:20px;
+	background-color:yellow;
+	text-align:center;
+	}
+.result
+{
+	float:left;
+	}
+
+</style>
+</head>
+
+<body>
+<div>
+<form name="f">
+<div id="game">
+<table width="250" border="1" bgcolor="#CCFFFF">
+  <tr>
+    <td width="20" height="20"><input type="text" name="a1" value="N" size="1"  maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="a2" value="" size="1"  maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="a3" value="M" size="1"  maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="a4" value="" size="1"  maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="a5" value="" size="1"  maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="a6" value="" size="1"  maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="a7" value="" size="1"  maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="a8" value="I" size="1"  maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="a9" value="" size="1"  maxlength="1" onkeyup="check()" /></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="b1" value="" size="1" maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="b2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b6" value="S" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="b9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="c1" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c6" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="c8" value="" size="1" maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="c9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="d1" value="S" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d2" value="P" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d3" value="I" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d6" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d7" value="L" size="1" maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="d8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="d9" value="S" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="e1" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e2" value="" size="1" maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="e3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e6" value="K" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="e9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="f1" value="C" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f3" value="C" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f5" value="M" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f6" value="B" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="f9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="g1" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g6" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="g9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+    <tr>
+    <td width="20" height="20"><input type="text"  name="h1" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h6" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="h9" value="" size="1" maxlength="1" onkeyup="check()" /></td>
+    </tr>
+    <tr>
+    <td width="20" height="20"><input type="text"  name="i1" value="W" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i6" value="E" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i7" value="S" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="i9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="j1" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j3" value="G" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j4" value="H" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j5" value="" size="1" maxlength="1" onkeyup="check()" /></td>
+    <td width="20" height="20"><input type="text"  name="j6" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="j9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+  <tr>
+    <td width="20" height="20"><input type="text"  name="k1" value="T" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k2" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k3" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k4" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k5" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k6" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k7" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k8" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    <td width="20" height="20"><input type="text"  name="k9" value="" size="1" maxlength="1" onkeyup="check()"/></td>
+    </tr>
+</table><br />
+
+</div>
+<div>You have found :</div>
+<div class="result" id="game1"></div>
+<div class="result" id="game2"></div>
+<div class="result" id="game3"></div>
+<div class="result" id="game4"></div>
+<div class="result" id="game5"></div>
+<div class="result" id="game6"></div>
+<div class="result" id="game7"></div>
+<div class="result" id="game8"></div>
+<div class="result" id="game9"></div>
+<div class="result" id="game10"></div>
+<div class="result" id="game11"></div>
+<div class="result" id="game12"></div>
+<div class="result" id="game13"></div>
+<div class="result" id="game14"></div>
+<div class="result" id="game15"></div>
+<div class="result" id="game16"></div>
+
+
+</form>
+
+</div>
+</body>
+</html>

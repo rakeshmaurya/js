@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var a = "rakesh";
+        // document.write(`Hi
+        // this is my name<h1> ${a}</h1> ${10 + 20}`);
+
+        var arr = [5, -5, 10, 20];
+        // let filtered = arr.filter(function (value) {
+        //     return value >= 0;
+        // });
+
+        let filtered = arr.filter(value => value >= 0);
+        var mappedarr = filtered.map((n) => '<li>' + n + '</li>');
+        var items = mappedarr.join(",");
+        var html = "<ul>" + items + "</ul>";
+
+
+        console.log(filtered);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

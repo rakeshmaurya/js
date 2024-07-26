@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.nav1
+{
+	color:red;
+}
+
+</style>
+
+</html>
+<body>
+
+<ul class="icyLink">
+
+      <li><a class="nav1" id="a" href="activelink_javascript.html">activelink_javascript</a></li>
+      <li><a class="nav1"  id="b" href="ctivelink_javascript1.html">activelink_javascript1</a></li>
+  </ul>
+  
+  <h1>activelink_javascript1</h1>
+<script>
+window.location
+    var url = window.location.pathname;
+	var strpo=url.lastIndexOf('/')+1;
+	alert(url);
+	
+    var filename = url.substring(strpo);
+   
+	if(filename=="activelink_javascript.html")
+	{
+		document.getElementById("a").style.color="green";
+	}
+	else if(filename=="activelink_javascript1.html")
+	{
+		document.getElementById("b").style.color="green";
+	}
+	else
+	{
+	document.getElementById("a").style.color="red";
+	document.getElementById("b").style.color="red";
+	document.getElementById("c").style.color="red";	
+	}
+</script>
+</body>
+</html>

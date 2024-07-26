@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    
+</head>
+<body>
+<!-- <div id="display1"></div>
+
+<div id="display2"></div>
+<button class="btn" onclick="displayMessage()"> Check It Out </button>
+-->
+
+<div id="display3"></div>
+<button class="btn" onclick="checkData(data)"> Correct Data </button>
+<button class="btn" onclick="checkData('data')"> Faulty Data </button>
+<script type="text/javascript">
+
+/*  function welcome() {
+        document.getElementById('display').innerHTML = "Welcome to my world!";
+    }
+    function displayMessage() {
+        try {
+            welcome();
+             }
+        catch (error) {
+            document.getElementById('display2').innerHTML = error.Message;
+        }
+    }
+       */
+
+    var userData = {
+        "firstName": "Marigold",
+        "lastName": "Peters",
+        "email": "marigold@me.com"
+    }
+
+    var data = JSON.stringify(userData);
+
+    function checkData(jsonData) {
+        var data;
+        try {
+            data = JSON.parse(jsonData);
+        }
+        catch (e) {
+            document.getElementById('display3').innerHTML = "<span class='error'> Error: </span> <br>" + e.message;
+            data = null;
+        }
+        finally {
+            if (data != null) {
+                var entry = "Name : " + data.firstName + " " + data.lastName + " <br> Email : " + data.email;
+                document.getElementById('display3').innerHTML = entry;
+            }
+        }
+    }
+        
+    </script>
+
+</body>
+</html>

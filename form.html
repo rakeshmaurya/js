@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/style1.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+function validate()
+{
+if(document.form1.name.value=="")
+{
+alert ("name feild is mandatory");
+ document.form1.name.focus();
+ return false;
+}
+if(document.form1.mb.value=="")
+{
+	alert("mobile no feild is mondatory");
+	document.form1.mb.focus();
+	return false;
+	}
+	if(isNaN(document.form1.mb.value))
+	{
+	alert("please provide numbic value");	
+	document.form1.mb.focus();
+	return false;
+		}
+		if(document.form1.mb.value.length !=10)
+		{
+			alert("please provide 10 digth");
+			document.form1.mb.focus();
+			return false;
+			}
+if(document.form1.email.value=="")
+{
+ alert(" email feild is mondatory");
+ document.form1.email.focus();
+ return false;
+ }
+ var email=document.form1.email.value;
+ var at=email.indexOf("@");
+  var dot=email.indexOf(".");
+ if(at==-1 || dot==-1)
+ {
+	alert("wrong mail id");
+	document.form1.email.focus();
+	return false;
+	 }
+if (document.form1.gender[0].checked == false && document.form1.gender[1].checked == false)
+ {
+	 alert("please select gender");
+	  document.form1.gender[0].focus();
+	  return false;
+	 }
+	
+	/* if(document.form1.country.value==1)
+	 {
+		 alert("please select country");
+		 document.form1.country.focus();
+		 return false;
+		 }*/
+if(document.form1.file.value=="");
+{
+	alert("please selected a file to upload")
+	return false;
+	}
+	return true;
+}
+ 
+ </script>
+
+</head>
+
+<body>
+<form name="form1" method="get" action="abc.php" enctype="multipart/form-data" onsubmit="return(validate());">
+<h1>Inquery form</h1>
+<table width="500" border="0" cellspacing="0" cellpadding="0" class="name">
+
+  <tr>
+    <td>Name</td>
+    <td><input type="text" size="40"  maxlength="30" name="name" class="textbox" /></td>
+  </tr>
+  <tr>
+    <td>mobile No </td>
+    <td><input type="text" size="30" maxlength="10" name="mb" class="textbox" /></td>
+  </tr>
+  <td>Email </td>
+    <td><input type="text" size="50" maxlength="50" name="email" class="textbox" /></td>
+  </tr>
+  <tr>
+   <td>Gender</td>
+    <td><input type="radio" name="gender" value="male" />male
+    <input type="radio" name="gender" value="male" />female</td>
+  </tr>
+    <td>Hobby</td>
+    <td><input type="checkbox" name="chk1"  />hockey
+    <input type="checkbox" name="chk2"   />golf
+    <input type="checkbox" name="chk3"  />cirket</td>
+  </tr>
+
+    <td>Country</td>
+    <td><select name="country">
+     <option value="1">Select your country</option>
+    <option value="india">India</option>
+    <option value="usa">usa</option>
+    <option value="itlay">Itlay</option>
+    <option value="japan">japan</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td>Attach file </td>
+    <td><input type="file" size="20" name="afile" value="" class="textbox" /> upload file</td>
+  </tr>
+  
+   
+  <tr>
+  <td>comment
+  </td>
+  <td><textarea rows="3" cols="40" name="comment" class="textbox"></textarea></td>
+  </tr>
+  <tr><td></td><td><input type="reset" value="rest" />
+  <input type="submit" value="submitform" /></td>
+  </tr>
+</table>
+
+</form>
+
+</body>
+</html>

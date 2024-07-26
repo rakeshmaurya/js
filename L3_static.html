@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function shape(shapename) {
+          // this.shapeCount is instance field 
+          this.shapename=shapename;
+          // shape.shapeCount is static field 
+            shape.shapeCount = ++shape.shapeCount || 1;
+
+this.shapeCount = ++ this.shapeCount || 1 ;
+        }
+
+        var shape1 = new shape("circle");
+        var shape2 = new shape("rectangle");
+        var shape3 = new shape("squere");
+        document.write(shape.shapeCount);
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript">
+		function emp(name, age) {
+			var _name = name;
+			var _age;
+
+			Object.defineProperty(this, 'age', {	
+				get: function () {
+					return _age;
+				},
+				set: function (value) {
+					if (value < 1 || value > 100) {
+						alert("wrong age");
+					}
+					else {
+						_age = value;
+					}
+
+				}
+			});
+
+			Object.defineProperty(this, 'name', {
+				get: function () {
+					return _name;
+				}
+			});
+
+
+
+		}
+		var rajesh = new emp("rajesh", 34);
+		rajesh.age = 22;
+		document.write(rajesh.age);
+	</script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

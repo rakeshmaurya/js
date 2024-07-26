@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.nav1
+{
+	color:red;
+}
+
+</style>
+
+</html>
+<body>
+<h1>PQR page</h1>
+<ul class="icyLink">
+
+      <li><a class="nav1" id="a" href="activelink_javascript.html">abc</a></li>
+      <li><a class="nav1"  id="b" href="activelink_javascript1.html">pqr</a></li>
+  </ul>
+<script>
+    var url = window.location.pathname;
+	var strpo=url.lastIndexOf('/')+1;
+	
+    var filename = url.substring(strpo);
+   
+	if(filename=="activelink_javascript.html")
+	{
+		document.getElementById("a").style.color="green";
+	}
+	else if(filename=="activelink_javascript1.html")
+	{
+		document.getElementById("b").style.color="green";
+	}
+	else
+	{
+	document.getElementById("a").style.color="red";
+	document.getElementById("b").style.color="red";
+	document.getElementById("c").style.color="red";	
+	}
+</script>
+</body>
+</html>
